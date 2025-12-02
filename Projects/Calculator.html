@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Calculator Program</title>
+
+    <style>
+        body {
+            background: #eaf2ff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: auto;
+            box-shadow: 0 0 10px #b4c7e7;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004aad;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            background: #1a1a1a;
+            color: #00ff66;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 16px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #4d94ff;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .back-btn:hover {
+            background: #1a75ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculator Program in C</h1>
+
+        <p>This is a simple calculator created using C language that performs:</p>
+        <ul>
+            <li>Addition</li>
+            <li>Subtraction</li>
+            <li>Multiplication</li>
+            <li>Division</li>
+        </ul>
+
+        <h2>📄 Source Code:</h2>
+
+        <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    char op;
+    double num1, num2;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &op);
+
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    switch (op) {
+        case '+':
+            printf("%.2lf + %.2lf = %.2lf", num1, num2, num1 + num2);
+            break;
+
+        case '-':
+            printf("%.2lf - %.2lf = %.2lf", num1, num2, num1 - num2);
+            break;
+
+        case '*':
+            printf("%.2lf * %.2lf = %.2lf", num1, num2, num1 * num2);
+            break;
+
+        case '/':
+            if (num2 != 0)
+                printf("%.2lf / %.2lf = %.2lf", num1, num2, num1 / num2);
+            else
+                printf("Error! Division by zero is not allowed.");
+            break;
+
+        default:
+            printf("Invalid operator!");
+    }
+
+    return 0;
+}
+        </pre>
+
+        <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+    </div>
+
+</body>
+</html>

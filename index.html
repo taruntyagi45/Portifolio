@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2 class="logo">My Portfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+        <div class="home-content">
+             <img src="images/Profile.jpeg" alt="Profile Photo" /><br><br>
+            <h1>Hi, I'm <span>Tarun Tyagi</span></h1>
+            <h3>B.Tech CSE (AI & ML) Student</h3>
+            <p>"Future Engineer in Making | Beginner in Artificial Intelligence"</p>
+           
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>About Me</h2><br/>
+        <p>
+            I am a first-year B.Tech CSE (AI & ML) student at <b>KIET Group of Institutions
+            </b>.
+            I love technology, coding, and exploring new ideas. My hobbies include
+            reading, coding small projects, and learning AI tools. My goal is to
+            become a skilled AI Engineer and build impactful projects.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-list">
+            <div class="skill">C Programming</div>
+            
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C++ (Basics)</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Simple Calculator</h3>
+                <p>A simple calculator built using C Language.</p>
+                <a class="view-btn" href="Projects/Calculator.html"_blank">View</a>
+
+            </div>
+
+            <div class="project-card">
+                <h3>Login Page</h3>
+                <p>Basic Login page created using HTML</p>
+                <a class="view-btn" href="Projects/LoginPage.html" target="_blank">View</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION (updated with social links) -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2><br>
+
+        <p>Email: <b>taruntyagi45@gmail.com</b></p>
+
+        <form>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="button">Send</button>
+        </form>
+
+        <!-- SOCIAL LINKS (new) -->
+        <div class="social">
+            <!-- GitHub -->
+            <a class="social-link github" href="https://github.com/taruntyagi45
+" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <!-- GitHub SVG -->
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M12 .5C5.73.5.8 5.43.8 11.7c0 4.86 3.15 8.98 7.52 10.44.55.1.75-.24.75-.53 0-.26-.01-1.13-.01-2.06-3.06.67-3.71-.74-3.94-1.42-.13-.34-.7-1.42-1.2-1.71-.41-.23-1-.79-.01-.81.93-.03 1.59.86 1.81 1.22 1.06 1.86 2.74 1.32 3.41 1.01.1-.78.41-1.32.75-1.62-2.44-.28-5-1.22-5-5.44 0-1.2.43-2.18 1.14-2.95-.11-.28-.5-1.42.11-2.96 0 0 .92-.3 3.02 1.13.88-.25 1.83-.37 2.77-.37s1.89.12 2.77.37c2.1-1.44 3.02-1.13 3.02-1.13.61 1.54.22 2.68.11 2.96.71.77 1.14 1.75 1.14 2.95 0 4.23-2.57 5.15-5.02 5.42.42.36.8 1.08.8 2.18 0 1.58-.01 2.86-.01 3.24 0 .29.2.64.76.53C19.05 20.68 22.2 16.56 22.2 11.7 22.2 5.43 17.27.5 12 .5z"/>
+                </svg>
+                <span>GitHub</span>
+            </a>
+
+            <!-- Instagram -->
+            <a class="social-link instagram" href="https://instagram.com/Imtarun45" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <!-- Instagram SVG -->
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="currentColor" d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.055 1.99.24 2.45.4.6.22 1.03.48 1.48.93.45.45.71.88.93 1.48.16.46.35 1.28.4 2.45.06 1.27.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.99-.4 2.45-.22.6-.48 1.03-.93 1.48-.45.45-.88.71-1.48.93-.46.16-1.28.35-2.45.4-1.27.06-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.99-.24-2.45-.4-.6-.22-1.03-.48-1.48-.93-.45-.45-.71-.88-.93-1.48-.16-.46-.35-1.28-.4-2.45C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.055-1.17.24-1.99.4-2.45.22-.6.48-1.03.93-1.48.45-.45.88-.71 1.48-.93.46-.16 1.28-.35 2.45-.4C8.416 2.212 8.8 2.2 12 2.2zm0 1.8c-3.14 0-3.5.012-4.73.068-1.01.05-1.56.22-1.92.36-.48.18-.82.4-1.18.76-.36.36-.58.7-.76 1.18-.14.36-.31.91-.36 1.92C2.912 8.5 2.9 8.86 2.9 12s.012 3.5.068 4.73c.05 1.01.22 1.56.36 1.92.18.48.4.82.76 1.18.36.36.7.58 1.18.76.36.14.91.31 1.92.36 1.23.056 1.59.068 4.73.068s3.5-.012 4.73-.068c1.01-.05 1.56-.22 1.92-.36.48-.18.82-.4 1.18-.76.36-.36.58-.7.76-1.18.14-.36.31-.91.36-1.92.056-1.23.068-1.59.068-4.73s-.012-3.5-.068-4.73c-.05-1.01-.22-1.56-.36-1.92-.18-.48-.4-.82-.76-1.18-.36-.36-.7-.58-1.18-.76-.36-.14-.91-.31-1.92-.36C15.5 4.012 15.14 4 12 4zM12 7.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4zm0 1.8a2.9 2.9 0 1 0 0 5.8 2.9 2.9 0 0 0 0-5.8zm4.95-2.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
+                </svg>
+                <span>Instagram</span>
+            </a>
+
+            <!-- Email -->
+            <a clas
+

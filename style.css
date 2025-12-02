@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+    body {
+    background: radial-gradient(circle at top, #1a233a, #0d1220 70%);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* NAVBAR */
+nav {
+    background: #1e2a47;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #00aaff;
+    outline: none;
+}
+
+/* HOME */
+.home {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.home img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    border-radius: 40%;
+    border: 5px solid #1e2a47;
+}
+
+/* ABOUT, SKILLS, PROJECTS, CONTACT */
+.about, .skills, .projects, .contact {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* SKILLS */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #1e2a47;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.skill:hover,
+.skill:focus {
+    background: #00aaff;
+    transform: translateY(-3px);
+}
+
+/* PROJECTS */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #1c2333;
+    color: #ffffff;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 170, 255, 0.25);
+}
+
+
+.project-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #1e2a47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-card button:hover,
+.project-card button:focus {
+    background: #00aaff;
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #1e2a47;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+    background: #00aaff;
+}
+
+/* SOCIAL LINKS (new styles) */
+.social {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background: #2f3d63;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* icon color inherits from text color */
+.social-link svg { 
+    display: block; 
+    color: white; 
+}
+
+/* Per-service accent colors on hover/focus */
+.social-link.github:hover,
+.social-link.github:focus {
+    background: #0f1723;       /* darker */
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(15,23,35,0.18);
+}
+
+.social-link.instagram:hover,
+.social-link.instagram:focus {
+    background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(204,35,136,0.18);
+}
+
+.social-link.email:hover,
+.social-link.email:focus {
+    background: #1177bb;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(17,119,187,0.18);
+}
+
+/* make links keyboard focus visible */
+.social-link:focus {
+    outline: 3px solid rgba(0,170,255,0.18);
+    outline-offset: 4px;
+}
+
+/* FOOTER */
+footer {
+    background: #1e2a47;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* Responsive small screens */
+@media (max-width: 600px) {
+    .about p { width: 95%; }
+    .home img { width: 140px; }
+    .project-container { gap: 16px; }
+    .social-link { padding: 9px 12px; font-size: 14px; }
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #1e2a47;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.view-btn:hover,
+.view-btn:focus {
+    background: #00aaff;
+}
+
