@@ -11,25 +11,6 @@ project links. It showcases my skills, college details, projects,
 and social media profiles.
 
 -------------------------------------------
-📁 Project Structure
--------------------------------------------
-
-portfolio/
-│── index.html                 → Main portfolio webpage
-│
-│── CSS/
-│     └── style.css            → Main stylesheet (dark modern theme)
-│
-│── images/
-│     └── Profile.jpeg         → My profile photo
-│
-│── Projects/                  → Folder containing my project files
-│     ├── Calculator.html      → Simple Calculator (C-based)
-│     └── LoginPage.html       → Login Page created using HTML
-│
-└── README.txt                 → Project documentation file
-
--------------------------------------------
 ✨ Features of the Portfolio
 -------------------------------------------
 
